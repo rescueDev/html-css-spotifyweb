@@ -105,12 +105,35 @@
 .upgrade a {
   text-decoration: none;
   border:1px solid white;
-  border-radius: 10%;
+  border-radius: 60%;
   padding: 15px;
   color:white;
 }
 
+.nav-music {
+  width: 60%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 
+.nav-voce-music {
+  justify-content: space-around;
+}
+
+.container-music {
+  display: flex;
+  flex-direction: row;
+}
+
+.ciaone {
+  width: 200px;
+  height: 200px;
+  /* debug */
+  background-color: red;
+  border:1px solid black;
+}
 /* sezione music centrale */
 .music-content {
   width: calc(100% - 20%);
