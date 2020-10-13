@@ -123,8 +123,10 @@
   color:lightgray;
 }
 
-.container-music {
-  padding:2%;
+.recently-played,
+.text-for-you,
+.text-artists {
+  padding:1%;
 }
 
 .copertine {
