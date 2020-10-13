@@ -123,6 +123,10 @@
   color:lightgray;
 }
 
+.container-music {
+  padding:2%;
+}
+
 .copertine {
   display: flex;
   flex-direction: row;
@@ -134,6 +138,7 @@
   /* debug */
   background-color: red;
   border:1px solid black;
+  padding: 1%;
 }
 
 .cover img {
@@ -148,6 +153,7 @@
   /* debug */
   background-color: red;
   border:1px solid black;
+  padding: 1%;
 }
 
 .cover-for-you img {
@@ -162,6 +168,7 @@
   /* debug */
   background-color: red;
   border:1px solid black;
+  padding: 1%;
 }
 
 .cover-popular img {
