@@ -5,9 +5,15 @@
   box-sizing: border-box;
 }
 
-a {
+a, p {
   text-decoration: none;
-  color: white;
+  color: #717171;
+  font-weight: bold;
+}
+
+hr {
+  border-color: #717171;
+  margin:2% 0;
 }
 
 /* debug */
@@ -21,7 +27,27 @@ a {
 
 .lateral-nav {
   width: 20%;
-  background-color: red;
+  background-color: #000000;
+}
+
+.crea-playlist h3 {
+  color: white;
+}
+
+.add-to-playlist, .nome-playlist, .installa-text {
+  color:#717171;
+}
+
+.installa-text {
+  margin-left: 3%;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nome-text {
+  color: white;
+  margin-left: 3%;
+  font-size:20px;
 }
 
 .centratura-sez {
@@ -39,19 +65,39 @@ a {
   padding: 5% 0;
 }
 
+.logo-cont {
+  width: 80%;
+  margin-bottom: 10%;
+  display: block;
+
+}
 .logo-cont img {
-  width: 200px;
-  height:100px;
+  width: 100%;
 }
 
-/* .navigation-button {
-  display: flex;
-  flex-direction: column;
-} */
+.logo-hidden {
+  width: 20%;
+  margin-bottom: 10%;
+  display: none;
+}
+
+.logo-hidden img {
+  max-width: 30px;
+  height: 30px;
+}
+
+
+.navigation-buttons {
+  width: 90%;
+}
 
 .navigation-buttons img {
-  width: 30px;
+  max-width: 30px;
   height: 30px;
+}
+
+.scomparsa {
+  padding: 2%;
 }
 
 .playlist-container {
@@ -60,11 +106,13 @@ a {
   flex-grow: 1;
 }
 
-/* .nome-utente,
-.installa-app {
-  display: flex;
-  flex-direction: row;
-} */
+.far.fa-plus-square {
+  font-size: 40px;
+}
+
+.nome-playlist {
+  margin: 5% 0;
+}
 
 .download-logo img {
   width: 20px;
@@ -117,16 +165,25 @@ a {
 }
 
 .nav-music {
-  width: 60%;
+  width: 80%;
   margin:2% auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
+.nav-voce-music {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-self: space-around;
+  flex-wrap: wrap;
+}
+
 .nav-voce-music a {
   text-decoration: none;
   color:lightgray;
+
 }
 
 .recently-played,
@@ -138,13 +195,14 @@ a {
 .copertine {
   display: flex;
   flex-direction: row;
+  text-align: center;
 }
 
 .cover {
   width: calc(100% / 6);
   min-height: 200px;
   /* debug */
-  background-color: red;
+  /* background-color: red; */
   border:1px solid black;
   padding: 1%;
 }
@@ -159,7 +217,7 @@ a {
   width: 200px;
   min-height: 200px;
   /* debug */
-  background-color: red;
+  /* background-color: red; */
   border:1px solid black;
   padding: 1%;
 }
@@ -174,7 +232,7 @@ a {
   width: 200px;
   min-height: 200px;
   /* debug */
-  background-color: red;
+  /* background-color: red; */
   border:1px solid black;
   padding: 1%;
 }
@@ -200,7 +258,7 @@ a {
   flex-direction: row;
   justify-content: space-between;
   /* debug */
-  background-color: pink;
+  background-color: #282828;
 }
 
 /* contenitore player sinistra */
@@ -291,11 +349,57 @@ a {
   border:1px solid white;
 }
 
-/* media queries */
+
+
+/* MEDIA QUERIES */
 
 /* media query xs */
 @media all and (max-width:767px){
 
+  .lateral-nav {
+    width: 8%;
+  }
+
+  .centratura-sez {
+    align-items: center;
+  }
+
+  .nav-music {
+    flex-wrap: wrap-reverse;
+  }
+
+  .nav-voce-music {
+
+    flex: 0 0 25%;
+  }
+
+  .scomparsa {
+    display: none;
+  }
+
+  .logo-hidden {
+    display: block;
+  }
+
+  .logo-cont {
+    display: none;
+  }
+
+  .playlist-container {
+    display: none;
+  }
+
+  .installa-text, .nome-text {
+    display: none;
+  }
+
+  /* sezione music centrale ridimensionamento*/
+  .music-content {
+    width: calc(100% - 10%);
+  }
+
+
+  /* ridimensionamento cover */
   .cover {
     flex: 0 0 40%;
   }
@@ -316,7 +420,8 @@ a {
 
 /* media query sm */
 @media all and (min-width:768px) and (max-width:991px){
-  
+
+  /* ridimensionamento cover */
   .cover {
     flex: 0 0 25%;
   }
@@ -331,6 +436,49 @@ a {
 
   .cover-popular {
     flex: 0 0 25%;
+  }
+
+}
+
+/* media query md */
+@media all and (min-width:992px) and (max-width:1200px){
+
+  /* ridimensionamento cover */
+  .cover {
+    flex: 0 0 calc(100% / 6);
+  }
+
+  .copertine {
+    flex-wrap: wrap;
+  }
+
+  .cover-for-you {
+    flex: 0 0 calc(100% / 6);
+  }
+
+  .cover-popular {
+    flex: 0 0 calc(100% / 6);
+  }
+
+}
+
+/* media query lg */
+@media all and (min-width:1200px){
+
+  .cover {
+    flex: 0 0 calc(100% / 6);
+  }
+
+  .copertine {
+    flex-wrap: wrap;
+  }
+
+  .cover-for-you {
+    flex: 0 0 calc(100% / 6);
+  }
+
+  .cover-popular {
+    flex: 0 0 calc(100% / 6);
   }
 
 }
