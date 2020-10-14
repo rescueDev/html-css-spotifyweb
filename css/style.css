@@ -271,11 +271,13 @@ hr {
   display: flex;
   flex-flow: nowrap row;
   justify-content:
+  flex-grow: 2;
 }
 
 #cover-player {
   width: calc((100% / 3) - 2%);
   margin:2%;
+  align-self: center;
 }
 
 #cover-player img {
@@ -338,7 +340,6 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-shrink: 2;
 }
 
 
@@ -414,6 +415,10 @@ hr {
     display: none;
   }
 
+  hr {
+    display: none;
+  }
+
   /* sezione music centrale ridimensionamento*/
   .music-content {
     width: calc(100% - 10%);
@@ -443,19 +448,20 @@ hr {
 
   /* sezione player sinistro */
   .sx-player {
-    width: 30%;
+    flex:2 0 30%;
   }
 
   #cover-player {
-    width: 100%;
+    width: 80%;
   }
 
   #cover-player {
-    margin:5%;
+    padding:5%;
   }
 
   #cover-player img {
-    width: 60px;
+    width: 40px;
+    align-items: center;
   }
 
   #title-song {
@@ -469,6 +475,32 @@ hr {
   #title-song h4 {
     font-size: 16px;
   }
+
+  .center-player {
+    width: 45%;
+  }
+
+  .time-controls {
+    width: 90%;
+  }
+
+  .time-bar {
+    width: 50%;
+  }
+
+  .time-passed {
+    justify-content: space-between;
+  }
+
+  .dx-player {
+    width: 30%;
+  }
+
+  .volume-control {
+    width: 40%;
+    border: 1px solid white;
+    margin: 0 auto;
+
 
 }
 
