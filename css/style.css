@@ -5,9 +5,10 @@
   box-sizing: border-box;
 }
 
-/* img {
-  max-width: 100%;
-} */
+a {
+  text-decoration: none;
+  color: white;
+}
 
 /* debug */
 
@@ -56,6 +57,7 @@
 .playlist-container {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 /* .nome-utente,
@@ -100,6 +102,10 @@
   flex-flow:nowrap row-reverse;
   align-items: center;
   justify-content: flex-start;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
 }
 
 .upgrade a {
@@ -201,7 +207,29 @@
 .sx-player {
   width: 20%;
   min-height:50px;
-  background-color: black;
+  background-color: white;
+  border:1px solid black;
+  display: flex;
+  flex-flow: nowrap row;
+  justify-content:
+}
+
+#cover-player {
+  width: 15%;
+  margin:5%;
+}
+
+#cover-player img {
+  max-width: 100%;
+}
+
+#title-song {
+  align-self: center;
+  }
+
+#favourite {
+  align-self: center;
+  padding-left: 35%;
 }
 
 /* contenitore player centrale */
@@ -211,9 +239,51 @@
   background-color: red;
 }
 
+.controlli-player {
+  width: 60%;
+  margin:0 auto;
+  border:1px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.controls {
+  padding: 0 5%;
+}
+
+.time-controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.time-bar {
+  width: 80%;
+  height: 1%;
+  border:1px solid white;
+  background-color: white;
+  align-self: center;
+}
+
 /* contenitore player destra */
 .dx-player {
   width: 20%;
   min-height:50px;
   background-color: green;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-controls {
+  margin-right: 4%;
+}
+
+.volume-control {
+  width: 50%;
+  border:1px solid white;
 }
