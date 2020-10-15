@@ -116,6 +116,11 @@ hr {
   overflow: auto;
 }
 
+.my-playlist {
+  height: 50%;
+  overflow: auto;
+}
+
 .far.fa-plus-square {
   font-size: 40px;
 }
@@ -132,6 +137,8 @@ hr {
 .username-container {
   display: flex;
   flex-direction: column;
+  position: sticky;
+  bottom: 0;
 }
 
 .installa-app {
@@ -267,10 +274,10 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  position: sticky;
+  position: fixed;
   bottom: 0;
-  /* debug */
   background-color: #282828;
+  /* debug */
 }
 
 /* contenitore player sinistra */
@@ -382,6 +389,10 @@ hr {
 
 .right-controls {
   margin-right: 4%;
+  color: white;
+}
+
+.right-controls i {
   color: white;
 }
 
@@ -546,6 +557,16 @@ hr {
 
 /* media query sm */
 @media all and (min-width:768px) and (max-width:991px){
+
+  .navigation-container span {
+    font-size: 12px;
+  }
+
+  .playlist-container {
+    font-size: 12px;
+  }
+
+
 
   /* sezione music centrale ridimensionamento*/
   .music-content {
