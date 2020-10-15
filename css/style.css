@@ -687,8 +687,18 @@ hr {
     font-size: 12px;
   }
 
+  .scomparsa {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
   .playlist-container {
     font-size: 14px;
+  }
+
+  .nome-playlist a h5 {
+    font-size: 14px;
+    font-weight: bold;
   }
 
   /* sezione music centrale ridimensionamento*/
@@ -818,21 +828,40 @@ hr {
 @media all and (min-width:992px) and (max-width:1200px){
 
   .lateral-nav {
-    width: 15%;
+    width: 20%;
     background-color: #000000;
   }
 
   /* sezione music centrale ridimensionamento*/
   .music-content {
-    width: calc(100% - 15%);
+    width: calc(100% - 20%);
   }
 
   .navigation-container span {
     font-size: 12px;
   }
 
+  .scomparsa {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
+  .add-to-playlist a i {
+    font-size: 18px;
+  }
+
+  .crea-playlist h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+
   .playlist-container {
+    font-size: 14px;
+  }
+
+  .nome-playlist a h5 {
     font-size: 12px;
+    font-weight: bold;
   }
 
   /* sezione music centrale ridimensionamento*/
@@ -1005,6 +1034,11 @@ hr {
 
   .playlist-container {
     font-size: 12px;
+  }
+
+  .nome-playlist a h5 {
+    font-size: 13px;
+    font-weight: bold;
   }
 
   .nav-music {
