@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: Verdana, sans-serif;
+}
+
 a, p {
   text-decoration: none;
   color: #717171;
@@ -14,6 +18,10 @@ a, p {
 hr {
   border-color: #717171;
   margin:2% 0;
+}
+
+.music-content h2 {
+  color:white;
 }
 
 /* debug */
@@ -105,6 +113,7 @@ hr {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  overflow: auto;
 }
 
 .far.fa-plus-square {
@@ -258,6 +267,8 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  position: sticky;
+  bottom: 0;
   /* debug */
   background-color: #282828;
 }
@@ -266,7 +277,7 @@ hr {
 .sx-player {
   width: 20%;
   min-height:50px;
-  background-color: white;
+  /* background-color: white; */
   border:1px solid black;
   display: flex;
   flex-flow: nowrap row;
@@ -334,12 +345,19 @@ hr {
   padding: 0 5%;
 }
 
+.controls i {
+  color: white;
+}
+
 .time-controls {
   width: 60%;
   margin:0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+.time-controls p {
+  color: white;
 }
 
 
@@ -364,6 +382,7 @@ hr {
 
 .right-controls {
   margin-right: 4%;
+  color: white;
 }
 
 .volume-control {
@@ -392,7 +411,7 @@ hr {
 
   .nav-voce-music {
 
-    flex: 0 0 25%;
+    flex: 0 0 30%;
     align-content: space-between;
   }
 
@@ -428,7 +447,7 @@ hr {
 
   /* sezione music centrale ridimensionamento*/
   .music-content {
-    width: calc(100% - 10%);
+    width: calc(100% - 8%);
   }
 
 
@@ -477,10 +496,12 @@ hr {
 
   #title-song p {
     font-size: 10px;
+    font-weight: normal;
   }
 
   #title-song h4 {
-    font-size: 16px;
+    font-size: 12px;
+    color: white;
   }
 
   .center-player {
@@ -489,6 +510,10 @@ hr {
 
   .time-controls {
     width: 90%;
+  }
+
+  .time-controls p {
+    font-size: 10px;
   }
 
   .time-bar {
@@ -512,6 +537,7 @@ hr {
   .right-controls {
     margin-right: 4%;
     margin-left: 4%;
+
   }
 
 
@@ -521,10 +547,16 @@ hr {
 /* media query sm */
 @media all and (min-width:768px) and (max-width:991px){
 
+  /* sezione music centrale ridimensionamento*/
+  .music-content {
+    width: calc(100% - 10%);
+
+  }
+
 
   .nav-voce-music {
 
-    flex: 0 0 33.333%;
+    flex: 0 0 20%;
     flex-wrap: wrap;
     align-content: space-between;
   }
@@ -532,6 +564,7 @@ hr {
   .nav-voce-music a {
     font-size: 12px;
     margin-bottom: 10%;
+    padding:0 20px;
   }
 
   /* ridimensionamento cover */
