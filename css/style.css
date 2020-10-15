@@ -48,7 +48,7 @@ hr {
 }
 
 .add-to-playlist {
-  padding-top: 5%;
+  padding: 5% 0;
 }
 
 .nome-playlist {
@@ -111,6 +111,10 @@ hr {
 .navigation-buttons {
   width: 90%;
   margin-bottom: 15%;
+}
+
+.navigation-buttons div {
+  padding: 3% 0;
 }
 
 .navigation-buttons img {
@@ -227,7 +231,7 @@ hr {
 .recently-played,
 .text-for-you,
 .text-artists {
-  padding:1%;
+   padding:2% 5%;
 }
 
 .copertine {
@@ -240,6 +244,12 @@ hr {
   width: calc(100% / 6);
   min-height: 200px;
   padding: 1%;
+}
+
+.cover h3,
+.cover-for-you h3,
+.cover-popular h3 {
+  color:white;
 }
 
 .img-cover {
@@ -484,6 +494,7 @@ hr {
 
   .nav-voce-music a {
     font-size: 12px;
+    font-weight: bold;
     margin-bottom: 10%;
   }
 
@@ -522,10 +533,33 @@ hr {
     padding:5px;
   }
 
+  .recently-played,
+  .text-for-you,
+  .text-artists {
+    padding-left: 3%;
+  }
+
+  /* padding sezioni music */
+  .recently-container,
+  .container-music,
+  .popular-artists {
+    padding: 2% 0;
+  }
+
+
   /* ridimensionamento cover */
   .cover {
     flex: 0 0 50%;
     padding: 3%;
+  }
+
+  .cover h3,
+  .cover-for-you h3,
+  .cover-popular h3 {
+    font-size:18px;
+  }
+  .cover p {
+    font-size: 16px;
   }
 
   .copertine {
@@ -591,6 +625,10 @@ hr {
     margin-bottom: 5%;
   }
 
+  .controls {
+    padding: 0 4%;
+  }
+
   .time-controls p {
     font-size: 10px;
   }
@@ -651,8 +689,22 @@ hr {
 
   .nav-voce-music a {
     font-size: 12px;
+    font-weight: bold;
     margin-bottom: 10%;
     padding:0 20px;
+  }
+
+  /* padding sezioni music */
+  .recently-container,
+  .container-music,
+  .popular-artists {
+    padding: 1% 0;
+  }
+
+  .recently-played,
+  .text-for-you,
+  .text-artists {
+    /* padding-left: 6%; */
   }
 
   /* ridimensionamento cover */
@@ -772,8 +824,22 @@ hr {
 
   .nav-voce-music a {
     font-size: 12px;
+    font-weight: bold;
     margin-bottom: 10%;
     padding:0 20px;
+  }
+
+  /* padding sezioni music */
+  .recently-container,
+  .container-music,
+  .popular-artists {
+    padding: 1% 0;
+  }
+
+  .recently-played,
+  .text-for-you,
+  .text-artists {
+    padding-left: 1%;
   }
 
   /* ridimensionamento cover */
@@ -911,6 +977,19 @@ hr {
     flex: 0 0 15%;
     flex-wrap: wrap;
     align-content: space-between;
+  }
+
+  /* padding sezioni music */
+  .recently-container,
+  .container-music,
+  .popular-artists {
+    padding: 1% 0;
+  }
+
+  .recently-played,
+  .text-for-you,
+  .text-artists {
+    padding-left: 1%;
   }
 
   .cover {
