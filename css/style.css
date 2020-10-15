@@ -1030,10 +1030,11 @@ hr {
 
   /* sezione player sinistro */
   .sx-player {
-    flex:0 0 20%;
+    flex:0 0 25%;
   }
 
   #cover-player {
+    width: 25%;
     align-self: center;
   }
 
@@ -1042,7 +1043,8 @@ hr {
   }
 
   #title-song {
-    margin-right:5%;
+    width: 30%;
+    /* margin-right:5%; */
   }
 
   #title-song p {
