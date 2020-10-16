@@ -219,6 +219,7 @@ hr {
   margin-right: 3%;
 }
 
+/* effetto hover upgrade */
 .upgrade a:hover {
   transition: 1s;
   background-color:#1DB954;
@@ -342,6 +343,11 @@ hr {
 .cover-popular img {
   max-width: 100%;
   height: auto;
+}
+
+.text-for-you h2,
+.text-artists h2 {
+  margin-bottom: 1%;
 }
 
 
