@@ -38,7 +38,12 @@ hr {
   background-color: #000000;
 }
 
-.crea-playlist h3 {
+.add-playlist-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.new-playlist h3 {
   color: white;
   font-weight: bold;
   font-weight: normal;
@@ -48,6 +53,12 @@ hr {
 .add-to-playlist {
   padding: 5% 0;
 }
+
+#make-playlist-text {
+  align-self: center;
+  margin-left: 4%;
+}
+
 
 .nome-playlist {
   padding-top: 5%;
@@ -109,11 +120,10 @@ hr {
 .navigation-buttons {
   width: 90%;
   margin-bottom: 15%;
-}
+ }
 
 .navigation-buttons div {
   padding: 3% 0;
-
 }
 
 .navigation-buttons img {
@@ -121,8 +131,15 @@ hr {
   height: 30px;
 }
 
+.container-nav-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
 .scomparsa {
-  padding: 2%;
+  padding: 4%;
+  color: #717171;
+  align-self: center;
 }
 
 .playlist-container {
@@ -199,15 +216,15 @@ hr {
   border:1px solid white;
   padding: 5px;
   color:white;
-  margin-right: 2%;
+  margin-right: 3%;
 }
 
 .upgrade a:hover {
   transition: 1s;
-  background-color:white;
-  color:black;
+  background-color:#1DB954;
+  color:white;
   transform: scale(1.1);
-  border-radius: 15%;
+  border-radius: 35%;
 }
 
 .nav-music {
@@ -535,7 +552,7 @@ hr {
     display: none;
   }
 
-  .installa-text, .nome-text {
+  .installa-text, #nome-text {
     display: none;
   }
 
@@ -695,6 +712,7 @@ hr {
   .scomparsa {
     font-size: 14px;
     font-weight: bold;
+    margin-left: 3%;
   }
 
   .playlist-container {
@@ -841,6 +859,13 @@ hr {
   .music-content {
     width: calc(100% - 20%);
   }
+
+  .scomparsa {
+  font-size: 14px;
+  font-weight: bolder;
+  margin-left: 4%;
+  }
+
 
   .navigation-container span {
     font-size: 12px;
@@ -1028,9 +1053,15 @@ hr {
     background-color: #000000;
   }
 
-  /* sezione music centrale ridimensionamento*/
+    /* sezione music centrale ridimensionamento*/
   .music-content {
     width: calc(100% - 15%);
+  }
+
+  .scomparsa {
+  font-size: 14px;
+  font-weight: bolder;
+  margin-left: 4%;
   }
 
   .navigation-container span {
